@@ -114,7 +114,7 @@ function placeMark(cell, cls) {
 function updateTurnIndicator() {
   const turn = oTurn ? "O" : "X";
   turnIndicator.textContent = `${turn}'s Turn`;
-  speak(`${turn}'s turn`);
+ // speak(`${turn}'s turn`);
 }
 
 // ====== END GAME ======
