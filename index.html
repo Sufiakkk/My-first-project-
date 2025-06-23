@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Tic Tac Toe</h1>
+
+  <p id="turnIndicator">X's Turn</p>
+
+  <div id="controls">
+    <label for="difficultySelect">AI Difficulty:</label>
+    <select id="difficultySelect">
+      <option value="none">Player vs Player</option>
+      <option value="easy">Easy (Random)</option>
+      <option value="medium">Medium (Greedy)</option>
+      <option value="hard">Hard (Unbeatable)</option>
+    </select>
+
+    <button id="darkModeToggle">🌗 Toggle Dark Mode</button>
+  </div>
+
+  <p id="timerDisplay">Time Left: 30s</p>
+
+  <div class="board" id="board">
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+    <div class="cell" data-cell></div>
+  </div>
+
+  <div class="message" id="winningMessage">
+    <p id="winningMessageText"></p>
+    <button id="restartButton">Restart</button>
+  </div>
+
+  <div id="scoreboard">
+    <p>X Wins: <span id="xWins">0</span></p>
+    <p>O Wins: <span id="oWins">0</span></p>
+    <p>Draws: <span id="draws">0</span></p>
+  </div>
+
+  <audio id="clickSound" src="click.wav"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
