@@ -1,0 +1,93 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f7fa; /* Light blue background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 700px;
+    width: 90%;
+    margin: 20px;
+}
+
+h1 {
+    color: #00796b; /* Teal color */
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+}
+
+#random-message {
+    font-style: italic;
+    color: #607d8b; /* Greyish blue */
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.project-card {
+    background-color: #e8f5e9; /* Light green */
+    border: 1px solid #c8e6c9;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 30px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h2 {
+    color: #2e7d32; /* Dark green */
+    margin-top: 0;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    font-size: 1em;
+    color: #424242;
+    margin-bottom: 25px;
+}
+
+/* Button Styling */
+.project-button {
+    display: inline-block;
+    background-color: #009688; /* Primary button color - Teal */
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 50px; /* Pill-shaped button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.1em;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.project-button:hover {
+    background-color: #00796b; /* Darker teal on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.project-button:active {
+    background-color: #004d40; /* Even darker on click */
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
