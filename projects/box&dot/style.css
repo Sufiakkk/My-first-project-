@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background-color: skyblue;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.controls {
+  margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls label {
+  font-weight: bold;
+}
+
+select, button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+#turnIndicator {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+#game {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  background-color: #fff;
+  border: 2px solid #333;
+  padding: 10px;
+  gap: 0;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #000;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.h-line, .v-line {
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.h-line:hover, .v-line:hover {
+  background: #888;
+}
+
+.h-line { width: 40px; height: 4px; }
+.v-line { width: 4px; height: 40px; }
+
+.line.selected { background: #2196F3; }
+
+.box {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 16px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.player1 { background-color: #f44336; color: white; }
+.player2 { background-color: #4caf50; color: white; }
