@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dots and Boxes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Dots and Boxes</h1>
+
+  <div class="controls">
+    <label for="sizeSelect">Grid Size:</label>
+    <select id="sizeSelect">
+      <option value="3">3 x 3</option>
+      <option value="4">4 x 4</option>
+      <option value="5">5 x 5</option>
+    </select>
+
+    <label for="modeSelect">Mode:</label>
+    <select id="modeSelect">
+      <option value="pvp">2-Player</option>
+      <option value="pve">Play vs AI</option>
+    </select>
+
+    <label id="aiLabel" for="aiDifficulty" style="display: none;">AI Difficulty:</label>
+    <select id="aiDifficulty" style="display: none;">
+      <option value="random">Random</option>
+      <option value="greedy">Greedy</option>
+      <option value="unbeatable">Unbeatable</option>
+    </select>
+
+    <button id="startBtn">Start Game</button>
+  </div>
+
+  <div class="scoreboard">
+    <div><strong>Player 1</strong>: <span id="score1">0</span></div>
+    <div><strong>Player 2</strong>: <span id="score2">0</span></div>
+  </div>
+
+  <p id="turnIndicator">Player <span id="turn">1</span>'s Turn</p>
+  <div id="game"></div>
+
+  <audio id="clickSound" src="click.wav"></audio>
+  <audio id="boxSound" src="box.wav"></audio>
+  <audio id="winSound" src="win.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
