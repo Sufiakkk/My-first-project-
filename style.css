@@ -115,7 +115,15 @@ p {
   color: #444;
   line-height: 1.6;
 }
-
+.project-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
