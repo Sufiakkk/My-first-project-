@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   background-color:skyblue;
-  color: #333;
+  color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
